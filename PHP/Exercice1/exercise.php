@@ -1,22 +1,23 @@
 <?php
 
-$booleanTrue;
-$booleanFalse;
+$booleanTrue = true;
+$booleanFalse = false;
 
-$int;
+$int = 123;
 
-$float;
+$float = 1.5;
 
-$integer;
+$integer = 9568;
 
-$double;
+$double = 2.3;
 
-$string;
+$string = 'hello weekend';
 
-$array;
+// $array = numbers(1,2,3,4,5,'6'); // old ways
+$array = [1,2,3,4,5,'6'];
 
-$doubleDimenssionArray;
+$doubleDimenssionArray = [[1.2],[3.4]] ;
 
-$associativeArray;
+$associativeArray = ['panama' => [245, 8545211]];
 
-$null;
+$null = null;
