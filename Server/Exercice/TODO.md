@@ -4,10 +4,11 @@ In this exercice, we need to create the home-page of the TagBeSill project.
 
 You must use the "fixture.sql" file to create the testing data.
 
-The test will need some dependencies. So you are expected to install them with composer.
+The test will need some dependencies. So you are expected to install them with 
+composer.
 
 Test case :
- * Uou must create a well formed html page
+ * You must create a well formed html page
  * You must load the records from the database
  * Foreach record :
  	* The record image must be displayed into the html
