@@ -13,17 +13,16 @@ try{
 
 $articles = $connection->query('select * from article');
 
-echo "<br>" .$articles->rowCount()."<br><br>";
+echo "<br>".$articles->rowCount()."<br><br>";
 
 //print_r($articles->fetch());
-echo "<br><br><br>";
+echo "<br><br>";
 //print_r($articles->fetch(PDO::FETCH_ASSOC));
 $AllArticles = $articles->fetchAll();
 //print_r("<br><br>");
 
 //write HTML with For Loop
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
