@@ -25,7 +25,7 @@ class User
     }
 
     //this method need a role as an argument or fatal error
-    public function addRole (Role $role)
+    public function addRole(Role $role)
     {
         if (!in_array($role, $this->roles)) {
             array_push($this->roles, $role);
@@ -33,53 +33,62 @@ class User
         return $this;
     }
 
+
     public function getRoles()
     {
         $labels = [Role::ROLE_USER];
         foreach ($this->roles as $role) {
             array_push($labels, $role->getLabel());
-
         }
         return array_unique($labels);
     }
 
-    public function getPassword()
-    {
-        return $this->password;
-    }
 
-    public function getSalt()
-    {
-        return $this->salt;
-    }
 
-    public function getUsername()
-    {
-        return $this->username;
-    }
+public
+function getPassword()
+{
+    return $this->password;
+}
 
-    public function setPassword($password)
-    {
-        $this->password = $password;
-        return $this;
-    }
+public
+function getSalt()
+{
+    return $this->salt;
+}
 
-    public function setSalt($salt)
-    {
-        $this->salt = $salt;
-        return $this;
-    }
+public
+function getUsername()
+{
+    return $this->username;
+}
 
-    public function setUsername($username)
-    {
-        $this->username = $username;
-        return $this;
-    }
+public
+function setPassword($password)
+{
+    $this->password = $password;
+    return $this;
+}
 
-    public function eraseCredentials()
-    {
-        $this->password = null;
-        $this->salt = null;
-    }
+public
+function setSalt($salt)
+{
+    $this->salt = $salt;
+    return $this;
+}
+
+public
+function setUsername($username)
+{
+    $this->username = $username;
+    return $this;
+}
+
+public
+function eraseCredentials()
+{
+    $this->password = null;
+    $this->salt = null;
+}
 }
 

@@ -28,7 +28,7 @@ class Role
     /**
      * @return mixed
      */
-    public function getId()
+    public function getId() : int
     {
         return $this->id;
     }
@@ -36,7 +36,7 @@ class Role
     /**
      * @return mixed
      */
-    public function getLabel()
+    public function getLabel() : ?string
     {
         return $this->label;
     }
@@ -44,7 +44,7 @@ class Role
     /**
      * @param mixed $label
      */
-    public function setLabel(string $label)
+    public function setLabel(string $label) : void
     {
         $this->label = $label;
         return $this;
